@@ -25,6 +25,8 @@ vite.config.ts
 tsconfig.json
 types.d.ts
 .npmrc
+vite.generated.ts
+bundles/
 
 # Vaadin dev-mode runtime cache
 .vaadin/
