@@ -8,6 +8,7 @@ COPY pom.xml .
 RUN mvn dependency:resolve -q --no-transfer-progress
 
 COPY src ./src
+COPY frontend ./frontend
 
 # Production build: bundles frontend assets into the JAR
 RUN mvn clean package -Pproduction -DskipTests --no-transfer-progress -q

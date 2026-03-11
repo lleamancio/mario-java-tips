@@ -79,7 +79,7 @@ public class MainView extends VerticalLayout {
         card.addClassName(versionClass(tip));
 
         tipText.setText(tip.tipText());
-        tipCounter.setText("Dica " + shownCount + " de " + allTips.size());
+        tipCounter.setText("Tip " + shownCount + " of " + allTips.size());
 
         // Restart the fade-in animation
         UI.getCurrent().getPage().executeJs(
@@ -193,7 +193,7 @@ public class MainView extends VerticalLayout {
         if (currentTip == null) return;
 
         String formatted =
-                "🍄 Java Tip do Dia — " + currentTip.javaVersion() + "\n\n"
+                "🍄 Java Tip of the Day — " + currentTip.javaVersion() + "\n\n"
                 + currentTip.tipText() + "\n\n"
                 + "#Java #JavaDev #MarioBrosDay";
 
@@ -212,7 +212,7 @@ public class MainView extends VerticalLayout {
                 formatted
         );
 
-        Notification.show("Copiado! Cole no LinkedIn agora \uD83C\uDF89", 3000,
+        Notification.show("Copied! Paste it on LinkedIn now \uD83C\uDF89", 3000,
                 Notification.Position.BOTTOM_CENTER);
     }
 
